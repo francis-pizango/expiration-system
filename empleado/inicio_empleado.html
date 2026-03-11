@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Empleado - Vencimientos</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Panel Operativo</h1>
+        <p>Bienvenido, Empleado</p>
+        <a href="../index.html">Cerrar Sesión</a>
+    </header>
+
+    <main class="container">
+        <section class="acciones-rapidas">
+            <h2>Acciones</h2>
+            <button onclick="abrirModal()">+ Registrar Nuevo Lote</button>
+            <input type="text" placeholder="Buscar producto por nombre o código...">
+        </section>
+
+        <section class="lista-vencimientos">
+            <h2>Productos Próximos a Vencer</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Categoría</th>
+                        <th>Fecha Vencimiento</th>
+                        <th>Estado</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-empleado">
+                    <tr>
+                        <td>Leche Gloria 1L</td>
+                        <td>Lácteos</td>
+                        <td style="color: red; font-weight: bold;">15/03/2026</td>
+                        <td>Crítico</td>
+                        <td><button>Retirar de Estante</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="../js/productos.js"></script>
+</body>
+</html>

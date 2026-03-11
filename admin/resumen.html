@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control - Admin</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Panel de Administración</h1>
+        <nav>
+            <a href="resumen.html">Inicio</a> | 
+            <a href="usuarios.html">Empleados</a> | 
+            <a href="alertas.html">Historial Alertas</a> |
+            <a href="../index.html">Cerrar Sesión</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="categorias-admin">
+            <h2>Gestión de Categorías</h2>
+            <button class="btn-nuevo">+ Nueva Categoría</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Categoría</th>
+                        <th>Total Artículos</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Lácteos</td>
+                        <td>12 artículos</td>
+                        <td><span class="semaforo verde">Optimo</span></td>
+                        <td>
+                            <button class="btn-edit">Editar</button>
+                            <button class="btn-eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Carnes y Embutidos</td>
+                        <td>8 artículos</td>
+                        <td><span class="semaforo amarillo">Regular</span></td>
+                        <td>
+                            <a href="lotes/carne_embutidos.html"><button class="btn-edit">Editar</button></a>
+                            <button class="btn-eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Panadería</td>
+                        <td>5 artículos</td>
+                        <td><span class="semaforo rojo">Crítico</span></td>
+                        <td>
+                            <button class="btn-edit">Editar</button>
+                            <button class="btn-eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
