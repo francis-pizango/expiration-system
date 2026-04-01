@@ -1,1 +1,10 @@
 .vscode/
+
+# Configuración y credenciales
+.env
+auth.php
+credenciales.json
+
+# Archivos temporales o del sistema
+.DS_Store
+Thumbs.db
