@@ -1,9 +1,9 @@
 .vscode/
 
-# Configuración y credenciales
+# Oculatar los archivos sensibles
 .env
 auth.php
-credenciales.json
+productos.php
 
 # Archivos temporales o del sistema
 .DS_Store
